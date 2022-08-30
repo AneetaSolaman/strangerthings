@@ -1,0 +1,20 @@
+<div class="summary col-md-2" >
+    <div class="card-body">
+        <h1 class="card-title">ABOUT</h1>
+      <p class="card-text" id="st">STRANGER THINGS<p>Hawkins, Indiana, 1983.A young boy,Will Byers,goes missing near a top-secret government laboratory.That same night, a strange young girl appears at a diner in the town.She has telekinetic powers and is on the run from the laboratory.The laboratory is researching supernatural phenomena and might have unwittingly unlocked a gateway to another dimension.</p>
+    </div>
+  </div> 
+  
+   <div class="col-md-4" *ngFor="let item of data">
+      
+        <img src="{{item.img}}" id="image">
+        <div class="container1">
+          <h3 class="">{{item.name}}</h3>
+          <h4>{{item.age}}</h4>
+          <h5>{{item.occupation}}</h5>
+          <button class="btn btn-primary" id="button1" (click)="trailer" routerLink="/trailer">Trailer</button>
+          <button class="btn btn-success" id="button2" (click)="view(item.id)">View</button>
+    
+      </div>
+    </div>
+    

@@ -1,0 +1,33 @@
+<div class="body">
+   <h2><b>
+            <div class="new" id="new" style="color: white;">SIGN UP HERE</div>
+        </b>
+    </h2>
+    <div class="container col-md-8">
+        <form [formGroup]="addProfileForm">
+            <label for="username" style="color: white;">LOGIN NAME </label>
+            <input type="text" formControlName="username" id="username" placeholder="username">
+            <div></div><br>
+            <div *ngIf="(this.addProfileForm.get('username')?.touched || this.addProfileForm.get('username')?.dirty)&&this.addProfileForm.get('username')?.errors"style="color: red;"> Invalid</div>
+            <label for="password"style="color: white;" id="password">PASSWORD </label>
+            <input type="text" formControlName="password" id="password" placeholder="password">
+            <div></div>
+            <div *ngIf="(this.addProfileForm.get('password')?.touched||this.addProfileForm.get('password')?.dirty)&&this.addProfileForm.get('password')?.errors"style="color: red;"> Invalid</div><br>
+            <label for="phone"style="color: white;">PHONE </label>
+            <input type="text" formControlName="phone" id="phone" placeholder="phone" ng-reflect-name="phone" style="margin-left: 43px;">
+            <div></div><br>
+            <div *ngIf="(this.addProfileForm.get('phone')?.touched||this.addProfileForm.get('phone')?.dirty)&&this.addProfileForm.get('phone')?.errors"style="color: red;"> Invalid</div>
+            <label for="occupation"style="color: white;">OCCUPATION</label>
+            <input type="text" class="formControlName" placeholder="occupation" formControlName="occupation" [typeahead]="job" id="k">
+            <div *ngIf="(this.addProfileForm.get('occupation')?.touched||this.addProfileForm.get('occupation')?.dirty)&&this.addProfileForm.get('occupation')?.errors"style="color: red;"> Invalid</div><br>
+            <br>
+            <label for="email"style="color: white;">EMAIL </label>
+            <input type="text" formControlName="email" id="email" placeholder="email"ng-reflect-name="email" style="margin-left: 48px;">
+            <div *ngIf="(this.addProfileForm.get('email')?.touched||this.addProfileForm.get('email')?.dirty)&&this.addProfileForm.get('email')?.errors"style="color: red;"> Invalid</div>
+            <div></div><br>
+            <button (click)="reset()" class="btn1">reset</button>
+            <button (click)="submit()" class="btn2"> submit</button>
+        </form>
+    </div>
+</div>
+  

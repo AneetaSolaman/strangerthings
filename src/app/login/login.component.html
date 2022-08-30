@@ -1,0 +1,14 @@
+<div class="one">
+    <div class="container">
+        <form [formGroup]="loginForm">
+            <h1>LOGIN</h1><br>
+            <!-- <label for="username">USERNAME &nbsp;&nbsp;</label> -->
+            <input type="text" id="user" formControlName="username" placeholder="USERNAME"><br><br>
+            <!-- <label for="password">PASSWORD &nbsp;&nbsp;</label> -->
+            <input type="text" id="pass" formControlName="password" placeholder="PASSWORD"><br><br>
+            <button class="log" (click)="login()">LOGIN</button>
+            <div routerLink="/addprofile">New User? Sing UP Here!</div>
+            
+        </form>
+    </div>
+</div>

@@ -1,0 +1,45 @@
+#user{
+height: 44px;
+width:276px;
+}
+#pass{
+    height: 44px;
+    width:276px;
+    
+}
+.container{
+text-align: center;
+margin-top: 100px;
+border: 2px solid black;
+width: 406px;
+height: 325px;
+background-color: white;
+
+}
+.log{
+    width: 276px;
+    height: 44px;
+    color: white;
+    background-image: linear-gradient(to bottom,#b7334d 0,#161717 100%);
+
+}
+h1{
+    font-family: emoji;
+    color: #161717 ;
+}
+/* .one{
+    background-image: url(../../assets/a.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 102%;
+    height: 95vh;
+    margin-top: -101px;
+}    */
+.one{
+    background-color: black;
+    background-image: linear-gradient(to bottom,#3e3737 0,#b7a4a0 100%);
+    padding-top: 22px;
+    padding-bottom: 100px;
+    margin-top: -21px;
+
+}

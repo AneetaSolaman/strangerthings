@@ -1,0 +1,30 @@
+img{
+    vertical-align: middle;
+    height: 210px;
+    width: 330px;
+    margin-left: 16px;
+    border-radius: 5px;
+    padding-top: 10px;
+}
+.container3{
+    font-family: emoji;
+    font-size: 10px;
+    line-height: 1.42857143;
+    color: #333;
+    margin-left: 10px;
+    background-color: #fff;
+    text-align: center;
+    border: 2px solid black;
+    width: 387px;
+    margin-left: 470px;
+    border-radius: 5px; 
+}
+.kk{
+    padding-top: 50px;
+    background-image: linear-gradient(45deg, black, transparent);
+    /* background-image: linear-gradient(to bottom,#3e3737 0,#b7a4a0 100%); */
+    margin-top: -20px;
+    height: 600px;
+    width: 1271px;
+}
+

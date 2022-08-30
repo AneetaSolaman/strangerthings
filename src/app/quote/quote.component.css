@@ -1,0 +1,30 @@
+#author{
+    margin-left: 10px;
+    text-align: center;
+    font-size:larger;
+    font-weight: bold;
+}
+#quote{
+    font-size: medium;
+    text-align: center;
+    
+}
+.quote{
+    background-image: url(../../assets/a.jpg);
+    /* background-repeat: no-repeat;
+    background-size: cover;
+    background-position:left;
+    height: 600px;
+    margin-top: -24px; */
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 170vh;
+    margin-top: -21px;
+
+    color: white;
+}
+    
+
+
